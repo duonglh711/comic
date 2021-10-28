@@ -2,6 +2,12 @@ version: '3'
 
 services:
   backend:
+    container_name: comic-python
     build: ./comic-python
     ports:
       - "5000:5000"
+  frontend:
+    container_name: comic-react
+    build: ./comic-react
+    ports:
+      - "3000:3000"
